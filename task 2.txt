@@ -1,0 +1,12 @@
+----------------------------------------------MONGO DB---------------------------------------------------
+
+1)db.product.find()
+2)db.product.find({product_price:{$gte:400,$lte:800}})
+3)db.product.find({product_price:{$not:{$gte:400,$lte:600}}})
+4)db.product.aggregate([{$match:{product_price:{$gt:400}}} ,{$limit:4}])
+5)
+6)db.product.find({$and:[{id:"10"}]})
+7)
+8)db.product.find({$and:[{product_material:"Soft"}]})
+9)db.product.find({$and:[{product_color:"indigo"},{product_price:492.00}]})
+10)
